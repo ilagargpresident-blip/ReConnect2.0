@@ -14,6 +14,7 @@ import WeddingPlanner from './components/WeddingPlanner';
 import ReasonsJournal from './components/ReasonsJournal';
 import CoupleGames from './components/CoupleGames';
 import UserSwitcher from './components/UserSwitcher';
+import ProposalPlanner from './components/ProposalPlanner';
 import { DAILY_PROMPTS, IMAGE_PLACEHOLDERS } from './constants';
 import { User, Memory, Reason, VisionBoard, PromptResponse, GameState, Level } from './types';
 
@@ -132,6 +133,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
              <div className="lg:col-span-2 space-y-6 lg:space-y-8">
               <PremaritalGuide />
+              <ProposalPlanner />
             </div>
              <div className="lg:col-span-1 space-y-6 lg:space-y-8">
               <WeddingPlanner />

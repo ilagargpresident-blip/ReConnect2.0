@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CalendarDaysIcon } from './IconComponents';
 
 const WeddingPlanner: React.FC = () => {
-    const [budget, setBudget] = useState(10000);
+    const [budget, setBudget] = useState(1000000);
 
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100 h-full">
@@ -20,14 +20,14 @@ const WeddingPlanner: React.FC = () => {
                     <h3 className="font-semibold text-stone-700">Simplified Budget Tracker</h3>
                      <label htmlFor="budget" className="flex justify-between items-center text-sm font-medium text-stone-700 mt-1">
                         <span>Our Target Budget</span>
-                        <span className="font-bold text-rose-600">${budget.toLocaleString()}</span>
+                        <span className="font-bold text-rose-600">₹{budget.toLocaleString('en-IN')}</span>
                     </label>
                     <input
                         id="budget"
                         type="range"
-                        min="1000"
-                        max="50000"
-                        step="1000"
+                        min="100000"
+                        max="5000000"
+                        step="50000"
                         value={budget}
                         onChange={(e) => setBudget(parseInt(e.target.value))}
                         className="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-rose-500"
