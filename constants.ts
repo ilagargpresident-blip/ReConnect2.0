@@ -10,42 +10,41 @@ export const DAILY_PROMPTS: string[] = [
   "What's one thing you admire about my relationship with my family?",
 ];
 
-// Custom, Indian-themed SVG images for Date Night ideas
 export const DATE_NIGHT_IDEAS: DateNightIdea[] = [
     {
         title: 'Bollywood Movie Night',
         description: 'Pick a classic or new movie, grab some popcorn, and enjoy.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGIyNzdiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIyLjE4IiByeT0iMi4xOCIvPjxwYXRoIGQ9Ik03IDE4bDUgLTRM NyA1djEzWm0xMCAxaC0zIi8+PC9zdmc+',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmI5MjNjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIyLjE4IiByeT0iMi4xOCIvPjxwYXRoIGQ9Ik03IDE4bDUgLTRM NyA1djEzWm0xMCAxaC0zIi8+PC9zdmc+',
     },
     {
         title: 'Virtual Chai & Samosa Date',
         description: 'Make your favourite snacks and catch up over video call.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNiA4aDhBNiA2IDAgMCAxIDE0IDE5SDZBNiA2IDAgMCAxIDYgOG0xNCA0djRjMCAxLjctMS4zIDMtMyAzSDRjLTEuNyAwLTMtMS4zLTMtM1Y4YzAtMS43IDEuMy0zIDMtM2g0bTIgMlY0bTEgMFYybS0xIDJWNCIvPjwvc3ZnPg==',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjJkM2VlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNiA4aDhBNiA2IDAgMCAxIDE0IDE5SDZBNiA2IDAgMCAxIDYgOG0xNCA0djRjMCAxLjctMS4zIDMtMyAzSDRjLTEuNyAwLTMtMS4zLTMtM1Y4YzAtMS43IDEuMy0zIDMtM2g0bTIgMlY0bTEgMFYybS0xIDJWNCIvPjwvc3ZnPg==',
     },
     {
         title: 'Online Antakshari',
         description: 'Challenge each other to a classic game of Antakshari online.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjU5ZTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik0xMiw4djRtMCA0YTEgMSAwIDAgMCAxLjc0LjY1bDEuNzYtMS4xN2ExIDEgMCAwIDAgLjAwLTEuMzRsLTEuNzYtMS4xN0ExIDEgMCAwIDAgMTIgOHoiLz48L3N2Zz4=',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik0xMiw4djRtMCA0YTEgMSAwIDAgMCAxLjc0LjY1bDEuNzYtMS4xN2ExIDEgMCAwIDAgLjAwLTEuMzRsLTEuNzYtMS4xN0ExIDEgMCAwIDAgMTIgOHoiLz48L3N2Zz4=',
     },
     {
         title: 'Plan a Future Trip in India',
         description: 'Dream about your next getaway, from the mountains to the beaches.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTRiODc5IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNOSAxMGEzIDMgMCAxIDAgNiAwYTMgMyAwIDAgMC02IDBaIi8+PHBhdGggZD0iTTIxIDljLTIuNC0yLjcgLTYuMy00LTktNC0yLjcgMC02LjYgMS4zLTkgNGwuMDkgMS45Yy4zIDEuNCAuNSAzIDEuNCA0LjdMMTIgMjFsLjAxLTQuMjctMi40Ny0xLjI2Ii8+PC9zdmc+',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDZiNmQ0IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNOSAxMGEzIDMgMCAxIDAgNiAwYTMgMyAwIDAgMC02IDBaIi8+PHBhdGggZD0iTTIxIDljLTIuNC0yLjcgLTYuMy00LTktNC0yLjcgMC02LjYgMS4zLTkgNGwuMDkgMS45Yy4zIDEuNCAuNSAzIDEuNCA0LjdMMTIgMjFsLjAxLTQuMjctMi40Ny0xLjI2Ii8+PC9zdmc+',
     },
     {
         title: 'Cook a Meal Together',
         description: 'Choose a recipe, video call, and cook the same dish together.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTBiOTgxIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMgoMTJoMjAiLz48cGF0aCBkPSJNNCAxMlY2YTQgNCAwIDAgMSA0LTRoOGE0IDQgMCAwIDEgNCA0djYiLz48cGF0aCBkPSJNNiAxMnY4YTII MiAwIDAgMCAyIDJoOGEyIDIgMCAwIDAgMi0ydi04Ii8+PHBhdGggZD0iTTkgMTZoNiIvPjwvc3ZnPg==',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCAxMmgxNiIgLz48cGF0aCBkPSJNCAxMmE4IDggMCAwIDEgOC04aDBhOCA4IDAgMCAxIDggOHY4YTIgMiAwIDAgMS0yIDJIMmEyIDIgMCAwIDEtMi0ydi04WiIgLz48cGF0aCBkPSJNOSA4VjYiIC8+PHBhdGggZD0iTTEyIDhWNiIgLz48cGF0aCBkPSJNMTUgOFY2IiAvPjwvc3ZnPg==',
     },
     {
         title: 'Online Ludo/Carrom Game',
         description: 'Relive childhood memories with a competitive online board game.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIyIiByeT0iMiIvPjxwYXRoIGQ9Ik0xMiAzbTE4TTMgMTJoMTgiLz48Y2lyY2xlIGN4PSI4IiBjeT0iOCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iOCIgcj0iMSIvPjxjaXJjbGUgY3g9IjgiIGN5PSIxNiIgcj0iMSIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjEiLz48L3N2Zz4=',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjJkM2VlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIzIiB5PSIzIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSIyIiByeT0iMiIvPjxwYXRoIGQ9Ik0xMiAzbTE4TTMgMTJoMTgiLz48Y2lyY2xlIGN4PSI4IiBjeT0iOCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iOCIgcj0iMSIvPjxjaXJjbGUgY3g9IjgiIGN5PSIxNiIgcj0iMSIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjEiLz48L3N2Zz4=',
     },
     {
         title: 'Share Childhood Photos',
         description: 'Go through old albums and share sweet memories from your past.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTg1NWY3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSI0IiB5PSIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIHJ4PSIyIiByeT0iMiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTAiIHI9IjMiLz48cGF0aCBkPSJNMTIgMTNjLTEuNjYgMC0zIDEuMzQtMyAzbDJoNnYtMmMwLTEuNjYtMS4zNC0zLTMtM3oiLz48L3N2Zz4=',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTMxNWY1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSI0IiB5PSIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIHJ4PSIyIiByeT0iMiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTAiIHI9IjMiLz48cGF0aCBkPSJNMTIgMTNjLTEuNjYgMC0zIDEuMzQtMyAzbDJoNnYtMmMwLTEuNjYtMS4zNC0zLTMtM3oiLz48L3N2Zz4=',
     }
 ];
 

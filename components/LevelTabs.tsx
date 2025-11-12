@@ -16,10 +16,10 @@ const LevelTabs: React.FC<LevelTabsProps> = ({ activeLevel, setActiveLevel }) =>
         <button
           key={level}
           onClick={() => setActiveLevel(level)}
-          className={`w-full text-center px-3 py-2.5 rounded-full text-sm font-semibold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2
+          className={`w-full text-center px-3 py-2.5 rounded-full text-sm font-semibold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2
             ${activeLevel === level
-              ? 'bg-rose-500 text-white shadow'
-              : 'text-stone-600 hover:bg-rose-50'
+              ? 'bg-orange-500 text-white shadow'
+              : 'text-stone-600 hover:bg-orange-50'
             }`}
         >
           <span className="font-bold">{`${levelNames[index]}:`}</span><span className="hidden sm:inline">{` ${level}`}</span>

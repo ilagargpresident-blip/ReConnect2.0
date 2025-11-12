@@ -55,14 +55,14 @@ const LoveLanguageExplorer: React.FC = () => {
                         <button 
                             key={answer.text}
                             onClick={() => handleAnswer(answer.languageKey)}
-                            className="w-full text-left p-4 bg-stone-50 border border-stone-200 rounded-lg hover:bg-rose-50 hover:border-rose-300 transition-all duration-200"
+                            className="w-full text-left p-4 bg-stone-50 border border-stone-200 rounded-lg hover:bg-orange-50 hover:border-orange-300 transition-all duration-200"
                         >
                            {answer.text}
                         </button>
                     ))}
                 </div>
                 <div className="w-full bg-stone-200 rounded-full h-2.5 mt-6">
-                    <div className="bg-rose-500 h-2.5 rounded-full" style={{ width: `${progress}%` }}></div>
+                    <div className="bg-orange-500 h-2.5 rounded-full" style={{ width: `${progress}%` }}></div>
                 </div>
             </div>
         );
@@ -71,13 +71,13 @@ const LoveLanguageExplorer: React.FC = () => {
     if (view === 'result' && result) {
         return (
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100 text-center">
-                 <div className="w-16 h-16 mx-auto bg-rose-100 rounded-full flex items-center justify-center mb-4">
-                    <SparklesIcon className="w-8 h-8 text-rose-500" />
+                 <div className="w-16 h-16 mx-auto bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                    <SparklesIcon className="w-8 h-8 text-orange-500" />
                 </div>
                 <h3 className="text-lg font-bold text-stone-700">Your primary love language is:</h3>
-                <h2 className="text-2xl font-bold text-rose-600 mb-2">{result.name}</h2>
+                <h2 className="text-2xl font-bold text-orange-600 mb-2">{result.name}</h2>
                 <p className="text-sm text-stone-500 mb-4">{result.description}</p>
-                <button onClick={resetExplorer} className="w-full px-4 py-2 bg-rose-500 text-white font-semibold rounded-lg hover:bg-rose-600 transition-colors">Explore All Languages</button>
+                <button onClick={resetExplorer} className="w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors">Explore All Languages</button>
             </div>
         )
     }
@@ -85,11 +85,11 @@ const LoveLanguageExplorer: React.FC = () => {
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100">
             <div className="flex items-center gap-3 mb-4">
-                <HeartIcon className="w-6 h-6 text-rose-500" />
+                <HeartIcon className="w-6 h-6 text-orange-500" />
                 <h2 className="text-xl font-bold text-stone-800">Love Languages</h2>
             </div>
 
-            <button onClick={startQuiz} className="w-full mb-4 px-4 py-2 bg-rose-50 text-rose-700 font-semibold rounded-lg hover:bg-rose-100 transition-colors">
+            <button onClick={startQuiz} className="w-full mb-4 px-4 py-2 bg-orange-50 text-orange-700 font-semibold rounded-lg hover:bg-orange-100 transition-colors">
                 Discover Your Love Language
             </button>
 
@@ -109,7 +109,7 @@ const LoveLanguageExplorer: React.FC = () => {
                             <div className="px-2 pb-2 text-sm text-stone-600 space-y-4">
                                <p className="italic">{lang.details}</p>
                                <div>
-                                   <h4 className="font-semibold text-teal-700 flex items-center gap-2"><LightbulbIcon className="w-4 h-4" /> How to Show (Long-Distance)</h4>
+                                   <h4 className="font-semibold text-cyan-700 flex items-center gap-2"><LightbulbIcon className="w-4 h-4" /> How to Show (Long-Distance)</h4>
                                    <ul className="list-disc list-inside pl-2 mt-1 space-y-1">
                                        {lang.howToShow.map(ex => <li key={ex}>{ex}</li>)}
                                    </ul>

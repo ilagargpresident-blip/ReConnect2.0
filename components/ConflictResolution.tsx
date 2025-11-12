@@ -31,7 +31,7 @@ const ConflictResolution: React.FC = () => {
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100 h-full">
             <div className="flex items-center gap-3 mb-4">
-                <ShieldCheckIcon className="w-6 h-6 text-teal-500" />
+                <ShieldCheckIcon className="w-6 h-6 text-cyan-500" />
                 <h2 className="text-xl font-bold text-stone-800">Conflict Resolution Toolkit</h2>
             </div>
             <div className="space-y-4">
@@ -53,11 +53,11 @@ const ConflictResolution: React.FC = () => {
                     <h3 className="font-semibold text-stone-700">"Cool Down" Timer</h3>
                     <p className="text-sm text-stone-500 mb-2">If things get heated, take a 5-minute break.</p>
                     {timerActive ? (
-                        <div className="text-center py-2 text-2xl font-bold text-teal-600 bg-teal-50 rounded-lg">
+                        <div className="text-center py-2 text-2xl font-bold text-cyan-600 bg-cyan-50 rounded-lg">
                             {formatTime(timer)}
                         </div>
                     ) : (
-                        <button onClick={handleStartTimer} className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-teal-500 text-white font-semibold rounded-lg hover:bg-teal-600 transition-colors">
+                        <button onClick={handleStartTimer} className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors">
                             <ClockIcon className="w-5 h-5" /> Start 5-Min Timer
                         </button>
                     )}

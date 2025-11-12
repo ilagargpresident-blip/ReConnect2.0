@@ -19,7 +19,7 @@ const MemoryLane: React.FC<MemoryLaneProps> = ({ memories, onAddMemory, currentU
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100">
             <div className="flex items-center gap-3 mb-4">
-                <CameraIcon className="w-6 h-6 text-teal-500" />
+                <CameraIcon className="w-6 h-6 text-cyan-500" />
                 <h2 className="text-xl font-bold text-stone-800">Shared Memory Lane</h2>
             </div>
             
@@ -41,11 +41,11 @@ const MemoryLane: React.FC<MemoryLaneProps> = ({ memories, onAddMemory, currentU
                     value={newMemory}
                     onChange={(e) => setNewMemory(e.target.value)}
                     placeholder={`Share as ${currentUser}...`}
-                    className="flex-grow p-2 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition"
+                    className="flex-grow p-2 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
                 />
                 <button
                     onClick={handleAddMemory}
-                    className="flex-shrink-0 px-4 py-2 bg-teal-500 text-white font-semibold rounded-lg hover:bg-teal-600 transition-colors flex items-center justify-center"
+                    className="flex-shrink-0 px-4 py-2 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors flex items-center justify-center"
                 >
                     <PlusIcon className="w-5 h-5" />
                 </button>

@@ -20,7 +20,7 @@ const FutureVisionBoard: React.FC<FutureVisionBoardProps> = ({ board, onAddItem,
   return (
     <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100 h-full flex flex-col">
       <div className="flex items-center gap-3 mb-4">
-        <EyeIcon className="w-6 h-6 text-rose-500" />
+        <EyeIcon className="w-6 h-6 text-orange-500" />
         <h2 className="text-xl font-bold text-stone-800">Future Vision Board</h2>
       </div>
       <div className="space-y-4 flex-grow">
@@ -46,7 +46,7 @@ const FutureVisionBoard: React.FC<FutureVisionBoardProps> = ({ board, onAddItem,
             <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="p-2 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition text-sm"
+                className="p-2 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition text-sm"
             >
                 {board.map(cat => <option key={cat.name} value={cat.name}>{cat.name}</option>)}
             </select>
@@ -55,9 +55,9 @@ const FutureVisionBoard: React.FC<FutureVisionBoardProps> = ({ board, onAddItem,
                 value={newItemText}
                 onChange={(e) => setNewItemText(e.target.value)}
                 placeholder={`Add as ${currentUser}...`}
-                className="flex-grow p-2 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition text-sm"
+                className="flex-grow p-2 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition text-sm"
             />
-            <button onClick={handleAddItem} className="px-3 bg-rose-500 text-white rounded-lg hover:bg-rose-600">
+            <button onClick={handleAddItem} className="px-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600">
                 <PlusIcon className="w-5 h-5" />
             </button>
         </div>

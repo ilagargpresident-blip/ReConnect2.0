@@ -27,19 +27,19 @@ const DailyPrompt: React.FC<DailyPromptProps> = ({ prompt, onNewPrompt, response
         </div>
         <button
           onClick={onNewPrompt}
-          className="flex-shrink-0 text-sm font-semibold text-rose-600 hover:text-rose-800 transition-colors"
+          className="flex-shrink-0 text-sm font-semibold text-orange-600 hover:text-orange-800 transition-colors"
         >
           New Prompt
         </button>
       </div>
-      <div className="bg-rose-50 p-4 rounded-lg">
+      <div className="bg-orange-50 p-4 rounded-lg">
         <p className="font-semibold text-stone-700">{prompt}</p>
       </div>
       
       <div className="mt-4 space-y-3 max-h-48 overflow-y-auto pr-2">
         {responses.map((res, index) => (
           <div key={index} className={`flex ${res.author === currentUser ? 'justify-end' : 'justify-start'}`}>
-            <div className={`max-w-xs md:max-w-md px-4 py-2 rounded-xl ${res.author === currentUser ? 'bg-rose-100 text-rose-900' : 'bg-teal-100 text-teal-900'}`}>
+            <div className={`max-w-xs md:max-w-md px-4 py-2 rounded-xl ${res.author === currentUser ? 'bg-orange-100 text-orange-900' : 'bg-cyan-100 text-cyan-900'}`}>
               <p className="text-sm">{res.text}</p>
             </div>
           </div>
@@ -57,10 +57,10 @@ const DailyPrompt: React.FC<DailyPromptProps> = ({ prompt, onNewPrompt, response
             }
           }}
           rows={3}
-          className="w-full p-3 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition"
+          className="w-full p-3 bg-stone-50 border border-stone-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition"
           placeholder={`Responding as ${currentUser}...`}
         />
-        <button onClick={handleSend} className="mt-2 w-full flex items-center justify-center gap-2 px-4 py-2 bg-rose-500 text-white font-semibold rounded-lg hover:bg-rose-600 transition-colors">
+        <button onClick={handleSend} className="mt-2 w-full flex items-center justify-center gap-2 px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors">
           <PaperAirplaneIcon className="w-5 h-5" /> Share with Partner
         </button>
       </div>

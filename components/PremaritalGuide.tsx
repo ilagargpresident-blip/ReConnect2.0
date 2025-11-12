@@ -6,7 +6,7 @@ const PremaritalGuide: React.FC = () => {
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100">
             <div className="flex items-center gap-3 mb-4">
-                <ChatBubbleLeftRightIcon className="w-6 h-6 text-teal-500" />
+                <ChatBubbleLeftRightIcon className="w-6 h-6 text-cyan-500" />
                 <h2 className="text-xl font-bold text-stone-800">Premarital Discussion Guide</h2>
             </div>
             <div className="space-y-6">

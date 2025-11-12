@@ -46,12 +46,12 @@ const CoupleGames: React.FC<CoupleGamesProps> = ({ gameState, onNewChallenge }) 
             };
         }
         switch (gameState.type) {
-            case 'truth': return { bgColor: 'bg-teal-50', textColor: 'text-teal-800', text: gameState.text };
+            case 'truth': return { bgColor: 'bg-cyan-50', textColor: 'text-cyan-800', text: gameState.text };
             case 'dare': return { bgColor: 'bg-amber-50', textColor: 'text-amber-800', text: gameState.text };
-            case 'moreLikely': return { bgColor: 'bg-purple-50', textColor: 'text-purple-800', text: gameState.text };
-            case 'wouldYouRather': return { bgColor: 'bg-indigo-50', textColor: 'text-indigo-800', text: gameState.text };
-            case 'neverHaveIEver': return { bgColor: 'bg-lime-50', textColor: 'text-lime-800', text: `Never have I ever ${gameState.text}` };
-            case 'charades': return { bgColor: 'bg-pink-50', textColor: 'text-pink-800', text: gameState.text };
+            case 'moreLikely': return { bgColor: 'bg-violet-50', textColor: 'text-violet-800', text: gameState.text };
+            case 'wouldYouRather': return { bgColor: 'bg-sky-50', textColor: 'text-sky-800', text: gameState.text };
+            case 'neverHaveIEver': return { bgColor: 'bg-emerald-50', textColor: 'text-emerald-800', text: `Never have I ever ${gameState.text}` };
+            case 'charades': return { bgColor: 'bg-fuchsia-50', textColor: 'text-fuchsia-800', text: gameState.text };
             default: return { bgColor: 'bg-stone-50', textColor: 'text-stone-400', text: "Choose a game to start!" };
         }
     };
@@ -78,7 +78,7 @@ const CoupleGames: React.FC<CoupleGamesProps> = ({ gameState, onNewChallenge }) 
                     <button 
                         key={tab.id} 
                         onClick={() => setActiveGame(tab.id)}
-                        className={`px-3 py-1.5 font-semibold rounded-t-lg transition-colors ${activeGame === tab.id ? 'border-b-2 border-rose-500 text-rose-600' : 'text-stone-500 hover:text-stone-800'}`}
+                        className={`px-3 py-1.5 font-semibold rounded-t-lg transition-colors ${activeGame === tab.id ? 'border-b-2 border-orange-500 text-orange-600' : 'text-stone-500 hover:text-stone-800'}`}
                     >
                         {tab.name}
                     </button>
@@ -92,21 +92,21 @@ const CoupleGames: React.FC<CoupleGamesProps> = ({ gameState, onNewChallenge }) 
             <div className="mt-4">
                 {activeGame === 'truthOrDare' && (
                     <div className="grid grid-cols-2 gap-3">
-                        <button onClick={handleGetTruth} className="w-full px-4 py-2 bg-teal-500 text-white font-semibold rounded-lg hover:bg-teal-600 transition-colors">New Truth</button>
+                        <button onClick={handleGetTruth} className="w-full px-4 py-2 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-colors">New Truth</button>
                         <button onClick={handleGetDare} className="w-full px-4 py-2 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors">New Dare</button>
                     </div>
                 )}
                 {activeGame === 'moreLikely' && (
-                    <button onClick={handleGetMoreLikely} className="w-full px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition-colors">New Question</button>
+                    <button onClick={handleGetMoreLikely} className="w-full px-4 py-2 bg-violet-500 text-white font-semibold rounded-lg hover:bg-violet-600 transition-colors">New Question</button>
                 )}
                 {activeGame === 'wouldYouRather' && (
-                     <button onClick={handleGetWouldYouRather} className="w-full px-4 py-2 bg-indigo-500 text-white font-semibold rounded-lg hover:bg-indigo-600 transition-colors">New Dilemma</button>
+                     <button onClick={handleGetWouldYouRather} className="w-full px-4 py-2 bg-sky-500 text-white font-semibold rounded-lg hover:bg-sky-600 transition-colors">New Dilemma</button>
                 )}
                 {activeGame === 'neverHaveIEver' && (
-                     <button onClick={handleGetNeverHaveIEver} className="w-full px-4 py-2 bg-lime-500 text-white font-semibold rounded-lg hover:bg-lime-600 transition-colors">New Prompt</button>
+                     <button onClick={handleGetNeverHaveIEver} className="w-full px-4 py-2 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition-colors">New Prompt</button>
                 )}
                 {activeGame === 'charades' && (
-                     <button onClick={handleGetCharades} className="w-full px-4 py-2 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 transition-colors">New Challenge</button>
+                     <button onClick={handleGetCharades} className="w-full px-4 py-2 bg-fuchsia-500 text-white font-semibold rounded-lg hover:bg-fuchsia-600 transition-colors">New Challenge</button>
                 )}
             </div>
         </div>

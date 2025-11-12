@@ -86,7 +86,7 @@ const ProposalPlanner: React.FC = () => {
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100">
             <div className="flex items-center gap-3 mb-4">
-                <RingIcon className="w-6 h-6 text-rose-500" />
+                <RingIcon className="w-6 h-6 text-orange-500" />
                 <h2 className="text-xl font-bold text-stone-800">Proposal Planner & Ideas</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -95,7 +95,7 @@ const ProposalPlanner: React.FC = () => {
                     <ul className="mt-2 space-y-2">
                         {considerations.map((item, index) => (
                             <li key={index} className="flex items-start">
-                                <span className="text-rose-500 font-bold mr-2 mt-1">&#10003;</span>
+                                <span className="text-orange-500 font-bold mr-2 mt-1">&#10003;</span>
                                 <span className="text-sm text-stone-600">{item}</span>
                             </li>
                         ))}
@@ -105,13 +105,13 @@ const ProposalPlanner: React.FC = () => {
                     <h3 className="font-bold text-lg text-stone-700">Creative Proposal Ideas</h3>
                     <div className="mt-2 space-y-3">
                         {initialIdeas.map(idea => (
-                            <div key={idea.title} className="bg-rose-50 p-3 rounded-lg border border-rose-100">
-                                <h4 className="font-semibold text-rose-800">{idea.title}</h4>
-                                <p className="text-sm text-rose-700 mt-1">{idea.description}</p>
+                            <div key={idea.title} className="bg-orange-50 p-3 rounded-lg border border-orange-100">
+                                <h4 className="font-semibold text-orange-800">{idea.title}</h4>
+                                <p className="text-sm text-orange-700 mt-1">{idea.description}</p>
                                 <div className="mt-2 space-y-1">
                                     {idea.checklist.map(item => (
                                         <label key={item} className="flex items-center text-sm cursor-pointer">
-                                            <input type="checkbox" checked={!!checkedItems[idea.title]?.[item]} onChange={() => handleCheck(idea.title, item)} className="h-4 w-4 rounded border-gray-300 text-rose-600 focus:ring-rose-500"/>
+                                            <input type="checkbox" checked={!!checkedItems[idea.title]?.[item]} onChange={() => handleCheck(idea.title, item)} className="h-4 w-4 rounded border-gray-300 text-orange-600 focus:ring-orange-500"/>
                                             <span className={`ml-2 ${checkedItems[idea.title]?.[item] ? 'line-through text-stone-400' : 'text-stone-600'}`}>{item}</span>
                                         </label>
                                     ))}
@@ -130,7 +130,7 @@ const ProposalPlanner: React.FC = () => {
                         value={newIdeaTitle}
                         onChange={(e) => setNewIdeaTitle(e.target.value)}
                         placeholder="Your Proposal Idea Title"
-                        className="w-full p-2 bg-white border border-stone-200 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition text-sm font-semibold"
+                        className="w-full p-2 bg-white border border-stone-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition text-sm font-semibold"
                     />
                     <div className="mt-2 space-y-1">
                         {currentCustomItems.map((item, index) => (
@@ -143,13 +143,13 @@ const ProposalPlanner: React.FC = () => {
                             value={newItemText}
                             onChange={(e) => setNewItemText(e.target.value)}
                             placeholder="Add a checklist item..."
-                            className="flex-grow p-2 bg-white border border-stone-200 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-rose-500 transition text-sm"
+                            className="flex-grow p-2 bg-white border border-stone-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition text-sm"
                         />
-                         <button onClick={handleAddNewItem} className="flex-shrink-0 px-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600">
+                         <button onClick={handleAddNewItem} className="flex-shrink-0 px-3 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600">
                             <PlusIcon className="w-5 h-5" />
                         </button>
                     </div>
-                    <button onClick={handleSaveCustomIdea} className="mt-3 w-full px-4 py-2 bg-rose-500 text-white font-semibold rounded-lg hover:bg-rose-600 transition-colors">
+                    <button onClick={handleSaveCustomIdea} className="mt-3 w-full px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors">
                         Save My Proposal Idea
                     </button>
                  </div>
@@ -160,12 +160,12 @@ const ProposalPlanner: React.FC = () => {
                     <h3 className="font-bold text-lg text-stone-700">My Custom Ideas</h3>
                     <div className="mt-2 space-y-3">
                         {customIdeas.map((idea, ideaIndex) => (
-                             <div key={idea.title} className="bg-teal-50 p-3 rounded-lg border border-teal-100">
-                                <h4 className="font-semibold text-teal-800">{idea.title}</h4>
+                             <div key={idea.title} className="bg-cyan-50 p-3 rounded-lg border border-cyan-100">
+                                <h4 className="font-semibold text-cyan-800">{idea.title}</h4>
                                 <div className="mt-2 space-y-1">
                                     {idea.items.map((item, itemIndex) => (
                                         <label key={item.text} className="flex items-center text-sm cursor-pointer">
-                                            <input type="checkbox" checked={item.completed} onChange={() => handleCustomItemCheck(ideaIndex, itemIndex)} className="h-4 w-4 rounded border-gray-300 text-teal-600 focus:ring-teal-500"/>
+                                            <input type="checkbox" checked={item.completed} onChange={() => handleCustomItemCheck(ideaIndex, itemIndex)} className="h-4 w-4 rounded border-gray-300 text-cyan-600 focus:ring-cyan-500"/>
                                             <span className={`ml-2 ${item.completed ? 'line-through text-stone-400' : 'text-stone-600'}`}>{item.text}</span>
                                         </label>
                                     ))}

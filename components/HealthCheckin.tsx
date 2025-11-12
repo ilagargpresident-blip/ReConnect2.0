@@ -12,7 +12,7 @@ const HealthCheckin: React.FC = () => {
     return (
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-stone-100 h-full">
             <div className="flex items-center gap-3 mb-4">
-                <HeartPulseIcon className="w-6 h-6 text-teal-500" />
+                <HeartPulseIcon className="w-6 h-6 text-cyan-500" />
                 <h2 className="text-xl font-bold text-stone-800">Relationship Health Check-in</h2>
             </div>
             <div className="space-y-4">
@@ -20,7 +20,7 @@ const HealthCheckin: React.FC = () => {
                     <div key={topic.id}>
                         <label htmlFor={topic.id} className="flex justify-between items-center text-sm font-medium text-stone-700">
                             <span>{topic.name}</span>
-                            <span className="font-bold text-teal-600">{ratings[topic.id] || 5}/10</span>
+                            <span className="font-bold text-cyan-600">{ratings[topic.id] || 5}/10</span>
                         </label>
                         <input
                             id={topic.id}
@@ -29,7 +29,7 @@ const HealthCheckin: React.FC = () => {
                             max="10"
                             value={ratings[topic.id] || 5}
                             onChange={(e) => handleRatingChange(topic.id, parseInt(e.target.value))}
-                            className="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-teal-500"
+                            className="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-cyan-500"
                         />
                     </div>
                 ))}
