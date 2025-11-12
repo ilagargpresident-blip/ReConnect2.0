@@ -69,6 +69,6 @@ export type PromptResponse = {
     author: User;
 };
 
-export type GameType = 'truthOrDare' | 'moreLikely' | 'wouldYouRather';
+export type GameType = 'truthOrDare' | 'moreLikely' | 'wouldYouRather' | 'neverHaveIEver' | 'charades';
 
-export type GameState = { type: 'truth' | 'dare' | 'moreLikely' | 'wouldYouRather'; text: string } | null;
+export type GameState = { type: 'truth' | 'dare' | 'moreLikely' | 'wouldYouRather' | 'neverHaveIEver' | 'charades'; text: string } | null;

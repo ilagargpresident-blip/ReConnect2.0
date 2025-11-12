@@ -15,7 +15,7 @@ export const DATE_NIGHT_IDEAS: DateNightIdea[] = [
     {
         title: 'Bollywood Movie Night',
         description: 'Pick a classic or new movie, grab some popcorn, and enjoy.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGIyNzdiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIyLjE4IiByeT0iMi4xOCIvPjxwYXRoIGQ9Ik03IDE4bDUgLTRM NyA1djEzWm0xMCAxaC0zIi8+PC9zdmc+',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGIyNzdiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSIyLjE4IiByeT0iMi4xOCIvPjxwYXRoIGQ9Ik03IDE4bDUgLTRM NyA1djEzWm0xMCAxaC0zIi8+PC9zdmc+',
     },
     {
         title: 'Virtual Chai & Samosa Date',
@@ -91,6 +91,28 @@ export const WOULD_YOU_RATHER_QUESTIONS: string[] = [
     "...eat only street food for a week or only home-cooked food for a week?",
     "...have unlimited golgappas for life or unlimited jalebis for life?",
     "...be a famous Bollywood star or a celebrated classical musician?",
+];
+
+export const NEVER_HAVE_I_EVER_QUESTIONS: string[] = [
+    "...re-gifted a present someone gave me.",
+    "...eaten a whole tub of ice cream by myself after a movie.",
+    "...pretended to like a dish your partner cooked.",
+    "...snooped on your partner's social media.",
+    "...blamed the traffic for being late when I just left late.",
+    "...told a tiny lie to get out of a family video call.",
+    "...finished a series on my own and pretended I waited for you.",
+    "...practiced a fake 'surprised' face for a gift I knew was coming.",
+];
+
+export const CHARADES_IDEAS: string[] = [
+    "Making chai",
+    "Dilwale Dulhania Le Jayenge (DDLJ)",
+    "Playing cricket",
+    "Bargaining with a street vendor",
+    "Riding in an auto-rickshaw",
+    "Doing a Bollywood dance number",
+    "Eating pani puri",
+    "Shah Rukh Khan's signature pose",
 ];
 
 
@@ -283,7 +305,7 @@ export const PREMARITAL_TOPICS: PremaritalTopic[] = [
         questions: [
             "How do you prefer to handle disagreements?",
             "What does a healthy argument look like to you?",
-            "How can we ensure we both feel heard and respected during conflicts?",
+            "How can we ensure we both feel heard and respected during a conflict?",
             "Are there any topics that are off-limits for discussion?"
         ]
     }
