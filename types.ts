@@ -48,6 +48,8 @@ export type Memory = {
 export type Reason = {
     text: string;
     author: User;
+    icon: string;
+    timestamp: number;
 };
 
 export type VisionItem = {

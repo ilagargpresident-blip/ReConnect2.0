@@ -30,8 +30,8 @@ const App: React.FC = () => {
     { text: "That time we got caught in the rain and just laughed.", author: 'Partner 2', image: IMAGE_PLACEHOLDERS[1] },
   ]);
    const [reasons, setReasons] = useState<Reason[]>([
-    { text: "The way you smile when you talk about something you love.", author: 'Partner 1' },
-    { text: "You always know how to make me laugh, even on tough days.", author: 'Partner 2' },
+    { text: "The way you smile when you talk about something you love.", author: 'Partner 1', icon: '😊', timestamp: Date.now() - 10000 },
+    { text: "You always know how to make me laugh, even on tough days.", author: 'Partner 2', icon: '😂', timestamp: Date.now() },
   ]);
   const [visionBoard, setVisionBoard] = useState<VisionBoard>([
     { name: 'Travel', items: [{ id: 1, text: 'Visit Japan for the cherry blossoms', author: 'Partner 1', image: IMAGE_PLACEHOLDERS[2] }] },
@@ -59,9 +59,9 @@ const App: React.FC = () => {
     }
   };
 
-  const handleAddReason = (text: string) => {
+  const handleAddReason = (text: string, icon: string) => {
     if(text.trim()){
-      setReasons(prev => [{text, author: currentUser}, ...prev]);
+      setReasons(prev => [{text, author: currentUser, icon, timestamp: Date.now()}, ...prev]);
     }
   };
 

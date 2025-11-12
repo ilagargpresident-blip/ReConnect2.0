@@ -34,7 +34,7 @@ export const DATE_NIGHT_IDEAS: DateNightIdea[] = [
     {
         title: 'Cook a Meal Together',
         description: 'Choose a recipe, video call, and cook the same dish together.',
-        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCAxMmgxNiIgLz48cGF0aCBkPSJNCAxMmE4IDggMCAwIDEgOC04aDBhOCA4IDAgMCAxIDggOHY4YTIgMiAwIDAgMS0yIDJIMmEyIDIgMCAwIDEtMi0ydi04WiIgLz48cGF0aCBkPSJNOSA4VjYiIC8+PHBhdGggZD0iTTEyIDhWNiIgLz48cGF0aCBkPSJNMTUgOFY2IiAvPjwvc3ZnPg==',
+        image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2EtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNCAxMXYtMWEyIDIgMCAwIDEgMi0yaDEyYTIgMiAwIDAgMSAyIDJ2MSIgLz48cGF0aCBkPSJNCAxMXY4YTIgMiAwIDAgMCAyIDJoMTJhMiAyIDAgMCAwIDItMnYtOCIgLz48cGF0aCBkPSJNOSA1VjMiIC8+PHBhdGggZD0iTTE1IDVWMyIgLz48cGF0aCBkPSJNMTIgNVYzIiAvPjwvc3ZnPg==',
     },
     {
         title: 'Online Ludo/Carrom Game',
