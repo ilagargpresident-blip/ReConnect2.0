@@ -1,0 +1,7 @@
+{
+  "name": "ReConnect",
+  "description": "An app to help couples bridge the distance, strengthen their love, and build their future together. This application provides tools and prompts to foster communication, create shared experiences, and plan a future, guiding couples from reconnection to commitment.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
